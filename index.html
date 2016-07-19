@@ -1,0 +1,95 @@
+<!--  
+    ProjectTracker HTML
+
+    Hack Tahoe TRPA Project Tracker prototype
+    Code for America: Hack Tahoe Brigade
+    
+    Donald C. Harriman  June 2016
+    @ https://github.com/donharriman
+-->
+<!DOCTYPE html>
+<html lang="en">
+<!-- modified from Jeff Booth's pizza tracker code -->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- 'title' is replaced programatically -->
+	<title id="title_tab">title</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/ProjectTracker.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- 'title' is replaced programatically -->
+	<div class="container">
+		<div id="title_page" class="page-title">title</div>
+	</div>
+
+	<div class="container" id="stages">
+		<div id="progress">
+			<div id="progress-heading">Project Stages:</div>
+			<div id="progress_bar" class="jumbotron row">
+				<!-- blocks programmatically created! -->
+			</div>
+		</div>
+			<div id="legend" class="legend">
+				<!-- legend programmatically created! -->
+			</div>
+			<br>
+	</div>
+
+	<div class="container">
+		<div class="panel panel-warning">
+			<div id="stage_panel" class="panel-warning">
+				<div id="stage_status" class="panel-heading"></div>
+				<div id="stage_message" class="panel-heading"></div>
+			</div>
+			<!-- issue panel only shows if there is an issue with the project -->
+			<div id="issue_panel" class="panel-issue">
+				<div id="issue_message" class="panel-heading issue-panel"></div>
+				<div id="issue_todo" class="panel-heading issue-panel"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="contact_panel" class="panel-body">
+			<h2>Questions?</h2>
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-3">
+					<h4>Contact:</h4>
+					<p id="contact"></p>
+				</div>
+				<div class="col-md-3">
+					<h4>Mailing Address:</h4>
+					<p id="address"></p>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+		</div>
+		<div class="buttons">
+			<button id="button_back" class="btn btn-primary btn-lg">Back</button>
+			<button id="button_next" class="btn btn-primary btn-lg">Next</button>
+		</div>
+		<br>
+	</div>
+
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/enumFL.js"></script>
+	<script src="js/MockAgencyData.js"></script>
+	<script src="js/MockProjectData.js"></script>
+	<script src="js/ProjectTracker.js"></script>
+	<script src="js/ProgressBar.js"></script>
+	<script src="js/MessagePanel.js"></script>
+	<script src="js/ContactPanel.js"></script>
+	<script src="js/TrackerButtons.js"></script>
+
+</body>
+
+</html>

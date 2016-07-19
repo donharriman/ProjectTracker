@@ -1,0 +1,83 @@
+
+/*  ProjectTracker.css
+
+    Hack Tahoe TRPA Project Tracker prototype
+    Code for America: Hack Tahoe Brigade
+    
+    Donald C. Harriman  June 2016
+    @ https://github.com/donharriman
+*/
+
+.page-title {
+    float: left;
+    padding: 15px;
+    margin-top: 15px;    
+    margin-bottom: 15px;
+    margin-left: 20px;    
+    font-size: 25px;
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+}
+
+.panel-heading, .panel-body {
+    text-align: center;
+}
+#stages {
+    background-color: #eee;
+    border-radius: 6px;
+}
+#progress-heading {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+
+}
+
+.progress-block {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 13.5%;
+    float: left;
+    margin: 2px;
+    font-size: 10px;
+}
+
+.stage {
+    color: #ffffff;
+	text-align: center;
+}
+.stage-completed-color {
+    background-color: #5cb85c
+}
+.stage-active-color {
+    background-color: #f0ad4e;
+}
+.stage-todo-color {
+    background-color: #5bc0de
+}
+
+.legend {
+    margin: auto;
+    width: 29%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.legend-item {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.issue-panel {
+  background-color: #d9534f;
+}
+.buttons {
+    margin: auto;
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
